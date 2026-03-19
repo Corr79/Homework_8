@@ -62,8 +62,11 @@ namespace AttendanceTracker
             // make a for loop that will run the numStudents times
             // inside that for loop make another for loop that will run 5 times
             // asker user input Y or N, convert Y and N into 1 and 0 and store in 
-            // attendance array, for example if Bill is present on day 1 the array 
-            // will store as attendance[bill, 1] 
+            // attendance array, example: if a student were present on day 3 the array will
+            // say attendance[1, 2], 1 for present and 2 for the 3rd day (0,1,2)
+            // The if statements do the part of storing in the array
+            // if Y then store a 1 in the attendance array at that position
+            // i and day for that current loop
 
             for (int i = 0; i < numStudents; i++)
 
@@ -75,7 +78,7 @@ namespace AttendanceTracker
 
                 {
                     string inputYN;
-
+                    
                     while (true)
                     {
 
